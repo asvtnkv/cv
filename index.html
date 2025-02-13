@@ -4,49 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asvtnkv CV</title>
+    <link href="styls.css" rel="stylesheet"/>
 </head>
 <body>
-    <table cellspacing="15"> 
-        <tr>
-            <td>
-                <img src="avatar.jpg" width="200" alt="тут моя фотка"/>
-            </td>
-            <td>
-                <h1>Анна Советникова</h1>
-                <p><em> Я <strong>мастер</strong> по наращиванию ресниц</em></p>
-                <p>Я люблю отдыхать, лежать на кровати и заниматься спортом, иногда читать книги</p>
-            </td>
-        </tr>
-    </table>
-    
-    <hr>
+    <div class="container">
+    <div class="info">
+        <img src="avatar.jpg" alt="тут моя фотка"class="avatar"/>
 
-    <h2>Мои социальные сети</h2>
-    <ul type="square">
-        <li><a href="https://www.instagram.com/asvtnk/" target="_blank">instagram</a></li>
-        <li><a href="https://t.me/asvtnkv_lash" target="_blank">telegram</a></li>
-    </ul>
+        <div class="info-text">
+        <h1>Анна Советникова</h1>
+        <p> Я <strong>мастер</strong> по наращиванию ресниц</p>
+        <p>Я люблю отдыхать, лежать на кровати и заниматься спортом, иногда читать книги</p>
 
-    <hr>
+        <h4>Мои социальные сети</h4>
+        <a href="https://www.instagram.com/asvtnk/" target="_blank">instagram</a>
+        |
+        <a href="https://t.me/asvtnkv_lash" target="_blank">telegram</a>
+    </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Читать</li>
-        <li>Вкусно покушать</li>
-        <li>Отжиматься</li>
-        <li>Покупать на вб</li>
-    </ol>
+    </div>
 
-    <hr>
+    <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+            <li>Читать</li>
+            <li>Вкусно покушать</li>
+            <li>Отжиматься</li>
+            <li>Покупать на вб</li>
+        </ol>
+    </div>
 
+    <div class="card bg-green">
     <h2>Опыт Работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
+        <table class="table">
             <tr>
                 <td>McDonalds</td>
                 <td>Директор</td>
@@ -61,35 +51,58 @@
                 <td>Beauty studio</td>
                 <td>Мастер по наращиванию ресниц</td>
                 <td>2021-2025</td>
-    </table>
+            </tr>    
+            <tr>
+                <td>AnikaNaisStudio</td>
+                <td>Топ-Мастер по наращиванию ресниц</td>
+                <td>2024-now</td>
+            </tr>    
+        </table>
+    </div>
 
-    <hr>
-
-    <h2>DREDGE</h2>
-    <a href="y.html">Посмотреть список</a>
-    
-    <hr>
-
+    <div class="card bg-red">
+        <h2>YouTub4ik</h2>
+        <ul class="link-list">
+            <li>
+                <a href="https://www.youtube.com/watch?v=IzD-AXRVDQk&t=1904s&ab_channel=Kuplinov%E2%96%BAPlay">ДРЕВНИЙ РИТУАЛ ► DREDGE #15
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=mA-xrf-JuVg&ab_channel=Kuplinov%E2%96%BAPlay">КУПЛИНОВ ДОСТАВЛЯЕТ ПИЦЦУ В КОСМОС</a>
+            </li>
+        </ul> 
+    </div>
+<div class="contact">
     <h2>Связаться со мной</h2>
     <form action="/">
+        <div class="row">
+        <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Введите имя...">
+        </div>
 
-        <br>
-
+        <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email" placeholder="Введите почту...">
-        
-        <br>
+        </div>
+        </div>
 
+        <div class="form-group">
         <label for="text">Ваще сообщение:</label>
         <br>
         <textarea id="text" rows="2" cols="15">
         </textarea>
+        </div>
 
-        <br>
-
-        <input type="submit" value="Связаться!">
+        <input class="btn" type="submit" value="Связаться!">
     </form>
+    </div>
+
+
+    <!-- <div class="position">
+        <div class="box"></div>
+    </div> -->
+    </div>
+    <div style="margin-bottom: 500px;"></div>
 </body>
 </html> 
